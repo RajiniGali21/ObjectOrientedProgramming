@@ -4,18 +4,16 @@ import java.util.Scanner;
 
 public class ClassRoomApp {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ENter the temperature = ");
-		int n = sc.nextInt();
-		ClassRoom c1 = new ClassRoom();
-//	System.out.println("Temperature = "+c1.temperature);
-//	c1.temperature = 100;
-//	System.out.println("Modified Temperature = "+c1.temperature);
-//		
-		System.out.println("Temperature = "+c1.getTemperature());
-		c1.setTemperature(n);
-		System.out.println("Modified Temperature = "+c1.getTemperature());
+		System.out.println("enter the temperature = ");
+		int temperature = sc.nextInt();
+		ClassRoom c = new ClassRoom();
+		System.out.println("Temperature = "+c.getTemperature());
+		c.setTemperature(temperature);
+		System.out.println("temperature = "+c.getTemperature());
 		sc.close();
-		}
+	}
+
 }

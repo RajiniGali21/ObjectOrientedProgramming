@@ -1,27 +1,26 @@
 package com.kn.Encapsulation;
 
-public class ClassRoom {
+public class ClassRoom 
+{
+private int temperature;
 
-	 private int temperature;
+public int getTemperature() 
+{
+	return temperature;
 
-	public int getTemperature() {
-		return temperature;
-	}
+}
 
-	public void setTemperature(int temperature) 
+public void setTemperature(int temperature) 
+{
+	if(temperature>=16 && temperature<=25)
 	{
-		if(temperature >=16 && temperature <=35)
-		{
-			this.temperature = temperature;;
-		}
-	
+	this.temperature = temperature;
+	}
 	else
 	{
-		System.out.println("Invalid Temperature");
-		
+		System.out.println("Invalid temperature");
 	}
-	}
+}
 
-		
-	 
+
 }

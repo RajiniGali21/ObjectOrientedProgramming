@@ -1,10 +1,10 @@
 package com.kn.Inheritance;
 
-public class Parent 
+public class Parent
 {
-String eyeColor = "Blue";
+String eyeColor = "blue";
 public void holiday()
 {
-	System.out.println("Tirupati....");
+	System.out.println("Tirpati");
 }
 }
